@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.container {
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: max-content;
+}
+
+.card {
+  width: max-content;
+  border: 5px solid rgb(214, 184, 107);
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+}
+
+.title {
+  text-transform: capitalize;
+  margin: 20px;
+  color: chocolate;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+label {
+  text-transform: uppercase;
+  color: chocolate;
+  outline: none;
+}
+select {
+  color: rgb(247, 109, 10);
+  border-color: rgb(233, 107, 17);
+  cursor: pointer;
+  border-radius: 7px;
+  outline: none;
+}
+select:hover {
+  background-color: rgb(240, 179, 25);
+  color: white;
+  transition: 1s;
+}
+button {
+  text-transform: capitalize;
+  margin: 10px;
+  border-radius: 7px;
+  line-height: 20px;
+  color: chocolate;
+  border-color: rgb(233, 107, 17);
+  transition: 1s;
+  border: none;
+}
+#addCart {
+  border: 2px solid chocolate;
+  width: 40%;
+}
+#addCart:hover {
+  background-color: rgb(224, 167, 24);
+  cursor: pointer;
+  color: white;
+}
+.cart {
+  font-size: 1rem;
+  width: 250px;
+  float: right;
+  text-align: center;
+  border: 4px solid rgb(214, 184, 107);
+  border-radius: 20px;
+  overflow-y: scroll;
+  height: 100vh;
+  color: chocolate;
+  margin-right: 10px;
+}
+.cartImg > img {
+  width: 100px;
+  height: 100px;
+}
+@media only screen and(min-width:768px) {
+  .card {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
