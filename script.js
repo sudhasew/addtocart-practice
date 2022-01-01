@@ -1,5 +1,3 @@
-// const cartItem = document.getElementById("addToCart");
-// const cartItem = document.getElementById("title");
 let addItemId = 0;
 function addToCart(item) {
   addItemId += 1;
